@@ -1,0 +1,4 @@
+cara buka vscode dengan direktori root
+sudo code --user-data-dir="~/.vscode-root"
+cara buka xampp dikomputer lain
+https://stackoverflow.com/questions/5524116/accessing-localhost-xampp-from-another-computer-over-lan-network-how-to
