@@ -9,3 +9,13 @@ https://www.linuxsec.org/2018/01/cara-uninstall-dan-remove-phpmyadmin-di.html
 
 cara install apache2
 https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart
+
+cara install phpmyadmin
+
+sudo add-apt-repository ppa:phpmyadmin/ppa
+sudo apt-get update
+
+sudo apt-get install phpmyadmin
+
+trus lanjutkan dari peringatan didigital ocean sampai kebawah
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04
