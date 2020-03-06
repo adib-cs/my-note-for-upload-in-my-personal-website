@@ -1,1 +1,4 @@
 https://howtoubuntu.org/how-to-install-cairo-dock-3-in-ubuntu
+
+sudo thunar
+terus paste folder iconnya ke usr/share/icons
