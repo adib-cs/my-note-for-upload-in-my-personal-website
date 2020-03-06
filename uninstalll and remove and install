@@ -19,3 +19,8 @@ sudo apt-get install phpmyadmin
 
 trus lanjutkan dari peringatan didigital ocean sampai kebawah
 https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04
+
+
+cara buka mysql pertama sudo mysql -u root mysql
+jika mau nambah password
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '@Sarirejo1';
