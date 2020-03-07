@@ -24,3 +24,6 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmy
 cara buka mysql pertama sudo mysql -u root mysql
 jika mau nambah password
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '@Sarirejo1';
+
+jika install laravel ggal karna versi php7.2 gra versio ubuntu 19.04 lngsung upgrade ke 19.10 phpnya automatis keupgrade juga
+https://www.linuxbabe.com/ubuntu/upgrade-ubuntu-18-04-19-04-to-ubuntu-19-10
