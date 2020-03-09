@@ -1,0 +1,9 @@
+https://www.ubuntupit.com/how-to-install-software-in-ubuntu-linux-a-complete-guide-for-newbie/
+
+
+Method 3: Using Advanced Package Tool (or APT) for Ubuntu
+
+    Open apt://vlc in a web browser
+    Click on Open link under the Launch Application dialog
+    Click on Install in the Install additional software dialog
+    Authenticate with your login password
