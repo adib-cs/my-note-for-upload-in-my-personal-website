@@ -1,0 +1,41 @@
+ASFDA
+
+https://api.telegram.org/bot<token>/sendMessage?chat_id=<group chat id >&text=<our text>
+
+diingat bahwa teks harus URL Encoding String
+
+ex - Hello% 20World (spasi diganti dengan% 20)
+
+checkout W3School untuk info lebih lanjut
+
+Alt Teks
+
+https://api.telegram.org/bot<token>/sendMessage?chat_id=<group chat id >&text=<our text>
+
+diingat bahwa teks harus URL Encoding String
+
+ex - Hello% 20World (spasi diganti dengan% 20)
+
+checkout W3School untuk info lebih lanjut
+
+Alt Teks
+
+https://api.telegram.org/bot<token>/sendMessage?chat_id=<group chat id >&text=<our text>
+
+diingat bahwa teks harus URL Encoding String
+
+ex - Hello% 20World (spasi diganti dengan% 20)
+
+checkout W3School untuk info lebih lanjut
+
+Alt Teks
+
+https://api.telegram.org/bot<token>/sendMessage?chat_id=<group chat id >&text=<our text>
+
+diingat bahwa teks harus URL Encoding String
+
+ex - Hello% 20World (spasi diganti dengan% 20)
+
+checkout W3School untuk info lebih lanjut
+
+Alt Teks
