@@ -1,0 +1,58 @@
+search botfather
+buat bot baru ( /newbot )
+catat api key yang dikasih
+buat group/chanel baru dan add bot yang baru dibuat tadi.jika chanel botnya harus jadi admin
+buat message digrub/chanel dan kunjungi https://api.telegram.org/bot<token>/getUpdates
+cari id group/bot/chanel.. id group dan chanel depannya ada '-' symbol minusnya kalau bot tidak tempatnya dichat terus idnya
+https://api.telegram.org/bot<token>/sendMessage?chat_id=<group/bot/chanel chat id >&text=<our text>
+
+ buat method dibawah dalam satu class dengan models yang digunakan saat akan mengirim data bersamaan dengan kirim message ketg
+ di methodnya kasih sebelum return $this->sendMessage($params);
+    private function getTelegram($url, $params)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url . $params); 
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 3);
+        $content = curl_exec($ch);
+        curl_close($ch);
+        return json_decode($content, true);
+    }
+
+    private function sendMessage($izin) {
+        $key = env('TELEGRAM_KEY');
+
+        $chat = $this->getTelegram('https://api.telegram.org/'. $key . '/getUpdates', '');
+
+        if ($chat['ok']) {
+            if ( $izin['tgl_kembali'] != null ) { 
+                $izinKembali = substr($izin['tgl_kembali'], 0, 16); 
+            } else {
+                $izinKembali = 'Selesai';
+            }
+
+            $text = 'السلام عليكم و رحمة الله و بركاته
+
+            #izin
+
+Nama : ' . str_replace(',', ', ', $izin['partner_uid']) . ' dan ' . Auth::user()->uid . ' 
+Tgl & Waktu : ' . substr($izin['tgl_keluar'], 0, 16) . ' - ' . $izinKembali  . '
+Keperluan : ' . $izin['keperluan'] . '. ';
+
+             $text = urlencode($text);
+
+
+             
+
+            return $this->getTelegram('https://api.telegram.org/' . $key . '/sendMessage', '?chat_id=-478542014&text=' . $text);
+            // return $this->getTelegram('https://api.telegram.org/' . $key . '/sendMessagechat' -d '_id=-478542014&text=my');
+            // return $this->getTelegram('https://api.telegram.org/' . $key . '/sendMessage?chat_id=&text=' . $text);
+        }
+    }
+    
+    
+    note : tutorial ini dipraktekan diwebnya santri.qodr.or.id nanti pasti banyak web yang akan ada praktek ini ini linknye :
+    1. santri.qodr.or.id udah dipush kegitlab
+    
+    
