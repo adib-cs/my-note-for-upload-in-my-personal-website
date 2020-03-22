@@ -1,5 +1,5 @@
 search botfather
-buat bot baru ( /newbot )
+buat bot baru ( /newbot ) 
 catat api key yang dikasih
 buat group/chanel baru dan add bot yang baru dibuat tadi.jika chanel botnya harus jadi admin
 buat message digrub/chanel dan kunjungi https://api.telegram.org/bot<token>/getUpdates
