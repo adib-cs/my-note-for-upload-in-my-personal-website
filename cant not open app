@@ -1,0 +1,3 @@
+chrome, visual studio dll tidak bisa dibuka gra2 permission denied difolder home...jdi semua app yg diinstall difolder home gk bsa dibuka
+caranya  sudo chmod -R 777 /
+tanda / adalah home jika mau membuka permission denied tinggal masukin folderny setelah /
