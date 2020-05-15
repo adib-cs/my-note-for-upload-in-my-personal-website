@@ -1,0 +1,7 @@
+delete / remove / uninstall mysql completly
+
+apt-get remove --purge 'mysql-.*'
+
+install mysql on debian 9
+
+https://linuxize.com/post/how-to-install-mysql-on-debian-9/
